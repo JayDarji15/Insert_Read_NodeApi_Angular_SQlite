@@ -1,0 +1,16 @@
+
+<form #formData="ngForm" (submit)="createRecord(formData.value)">
+  <input type="text" id="id" name="id" ngModel required>
+  <input type="text" id="name" name="name" ngModel required>
+  <input type="text" id="email" name="email" ngModel required>
+
+  <!-- Add more form fields as needed -->
+
+  <button type="submit">Create Record</button>
+</form>
+
+
+<div>
+  <h2>List Of Data</h2>
+  <div>{{users |json }}</div>
+</div>
